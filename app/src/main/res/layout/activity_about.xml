@@ -28,19 +28,35 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="How to use this app:&#10;1. On the main screen, choose the month.&#10;2. Enter the units used (1–1000 kWh).&#10;3. Slide to set the rebate (0–5%).&#10;4. Tap CALCULATE to see Total Charges and Final Cost.&#10;5. Tap SAVE to store the bill.&#10;6. Tap VIEW HISTORY to see saved bills; tap a bill to view, edit, or delete it."
+            android:text="How to use this app:&#10;&#10;1. On the main screen, choose the month from the dropdown.&#10;2. Enter the units used in kWh (a whole number from 1 to 1000).&#10;3. Slide the bar to set your rebate (0% to 5%).&#10;4. Tap CALCULATE to see your Total Charges and Final Cost on the same screen.&#10;5. Tap SAVE to store the bill in the app.&#10;6. Tap VIEW HISTORY to see all saved bills, shown as the month and its final cost.&#10;7. Tap any saved bill in the list to open its full details.&#10;8. On the details screen, tap EDIT to change the bill, or DELETE to remove it."
             android:textSize="15sp"
+            android:lineSpacingExtra="4dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="https://github.com/Rahman-22/Electric-Bill"
+            android:text="https://github.com/Rahman-22/ElectricBill"
             android:autoLink="web"
             android:textSize="16sp"
             android:paddingBottom="20dp"
             android:textColorLink="@color/blue"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDDDDD"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&#169; 2026 Abdul Rahman Nur Hakim Bin Rahim. All Rights Reserved.&#10;&#10;Electric Bill Estimator was developed for educational purposes as part of the ICT602 coursework. All source code, designs, and documentation remain the intellectual property of the developer unless otherwise stated."
+            android:textSize="13sp"
+            android:textColor="#555555"
+            android:gravity="center"
+            android:paddingBottom="20dp"/>
 
         <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnBack" android:layout_width="match_parent" android:background="@drawable/bg_gradient"
             android:textColor="@color/white"

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Electricity Bill Calculator"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingBottom="6dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to use: 1) Choose a month. 2) Enter units used (1–1000 kWh). 3) Slide the rebate. 4) Tap CALCULATE to see the cost, then SAVE to store it."
+            android:textSize="14sp"
+            android:paddingBottom="16dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Select Month" android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/spinnerMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/months"
+            android:paddingBottom="12dp"/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Units Used (kWh)" android:textStyle="bold"
+            android:paddingTop="8dp"
+        />
+        <EditText
+            android:id="@+id/editUnit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter 1 to 1000"
+            android:inputType="number"
+            android:maxLength="4"/>
+
+        <TextView
+            android:id="@+id/tvRebateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rebate: 0%"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarRebate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_gradient"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Charges: RM 0.00"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:paddingTop="16dp"/>
+        <TextView
+            android:id="@+id/tvFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Final Cost: RM 0.00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primaryDark"
+            android:paddingTop="4dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_gradient"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VIEW HISTORY"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_gradient"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ABOUT"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_gradient"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</ScrollView>

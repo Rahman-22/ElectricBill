@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bill Details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingBottom="16dp"/>
+
+    <TextView android:id="@+id/tvMonth"  android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18sp" android:paddingBottom="8dp"/>
+    <TextView android:id="@+id/tvUnit"   android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18sp" android:paddingBottom="8dp"/>
+    <TextView android:id="@+id/tvTotal"  android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18sp" android:paddingBottom="8dp"/>
+    <TextView android:id="@+id/tvRebate" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="18sp" android:paddingBottom="8dp"/>
+    <TextView android:id="@+id/tvFinal"  android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:textSize="20sp" android:textStyle="bold"
+        android:textColor="@color/primaryDark" android:paddingBottom="24dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnEdit"   android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="EDIT" android:background="@drawable/bg_gradient"
+        android:textColor="@color/white"/>
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnDelete" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="DELETE" android:layout_marginTop="8dp" android:background="@drawable/bg_gradient"
+        android:textColor="@color/white"/>
+    <androidx.appcompat.widget.AppCompatButton android:id="@+id/btnBack"   android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="BACK" android:layout_marginTop="8dp" android:background="@drawable/bg_gradient"
+        android:textColor="@color/white"/>
+</LinearLayout>
